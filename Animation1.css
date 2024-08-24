@@ -1,0 +1,152 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    /* /* overflow:hidden ;  */
+   /* background-image: url(" https://wallpapers.com/images/hd/dark-sky-background-1920-x-1200-d6w761q54t2u4ya2.jpg"); 
+    background-size: cover;  */
+     background-color: black; 
+}
+
+
+span{
+    display: inline-block;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border-radius:50%;
+}
+.sun{
+    width:60px;
+    height:60px;
+    background-color: yellow;
+    box-shadow: 0 0 30px white;
+    z-index: 9999;
+}
+
+.planet{
+ background: transparent; 
+ border-right: 2px solid white;
+ border-left:4px solid rgb(240, 238, 231);
+/* border: 2px solid rgb(247, 239, 239);  */
+animation: animate 2s linear infinite;  
+}
+.planet1{
+    width:100px;
+    height:100px;
+    animation: animate 2s linear infinite;
+}
+.planet2{
+    width:180px;
+    height:180px;
+    animation: animate 4s linear infinite;
+}
+.planet3{
+    width:250px;
+    height:250px;
+    animation: animate 6s linear infinite;
+}
+.planet4{
+    width:300px;
+    height:300px;
+    animation: animate 7s linear infinite;
+}
+.planet5{
+    width:360px;
+    height:360px;
+    animation: animate 9s linear infinite;
+}
+.planet6{
+    width: 450px;
+    height:450px;
+    animation: animate 10s linear infinite;
+}
+.planet7{
+    width:540px;
+    height:540px;
+    animation: animate 11s linear infinite;
+}
+.planet8{
+    width:620px;
+    height:620px;
+    animation: animate 12s linear infinite;
+}
+
+span::before, span::after{
+    content:'';
+    position:absolute;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.planet1::before{
+    width:20px;
+    height:20px;
+    bottom:6px;
+    left:10px;
+    background-color: #cc0909;
+}
+.planet2::before{
+    width:25px;
+    height:25px;
+    top:10px;
+    left:10px;
+  
+    background-color: #90eb09;
+}
+.planet3::before{
+    width:30px;
+    height:30px;
+    top:50px;
+  right:8px;
+    background-color: #ed0b80;
+}
+.planet4::before{
+    width:35px;
+    height:35px;
+  top:120px;
+    left:280px;
+    background-color: #2fe912;
+}
+.planet5::before{
+    width:43px;
+    height:43px;
+    bottom:10px;
+    left:260px;
+    background-color: rgb(244, 41, 10);
+}
+.planet6::before{
+    width:50px;
+    height:50px;
+    top:115px;
+    left:-15px;
+    background-color:chocolate;
+}
+
+.planet7::before{
+    width:47px;
+    height:47px;
+    bottom:90px;
+right:30px;
+    background-color:mediumblue;
+}
+.planet8::before{
+    width:55px;
+    height:55px;
+ top:5px;
+  right:150px;
+    background-color:olive;
+}
+@keyframes animate{
+    0%{
+        transform: translate(-50% ,-50%) rotate(0);
+    }
+
+     100%{
+            transform: translate(-50%,-50%) rotate(360deg);
+        } 
+} 
